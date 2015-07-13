@@ -68,15 +68,11 @@ void setup() {
 }
 
 void loop() {
-  //rainbowCycleOrig(0);
-  //setAllPixels(0);
-  //delay(500);
   updateKeys();                      // update key positions
   checkPresses();                    // any keys pressed?
   if(currentMode != WIPE && currentMode != FILLUP && currentMode != UNFILL && currentMode != BLOCKS && currentMode != END) {
     if(allKeysOff()) setAllPixels(0);  // reset Neopixels if no presses
   }
-  
 }
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
